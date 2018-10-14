@@ -9,5 +9,6 @@ public class Client {
 
         Cinema proxy = (Cinema) Proxy.newProxyInstance(ClassLoader.getSystemClassLoader(), new Class[]{Cinema.class}, cinemaHandler);
         proxy.movie();
+        proxy.movie("大话西游");
     }
 }
